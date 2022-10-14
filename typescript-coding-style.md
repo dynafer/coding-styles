@@ -1,5 +1,5 @@
 # Typescript Coding Style
-> ## I. Common Style
+## I. Common Style
 > ### 1. Use Camel Case for ...
 > * local variables
 > * local functions
