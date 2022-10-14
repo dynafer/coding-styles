@@ -173,16 +173,17 @@
 > ### 10. Order in ...
 > * general and namespaces
 > 	1. import
-> 	2. global constants
-> 	3. local constants
-> 	4. local variables
-> 	5. enums
-> 	6. types
-> 	7. interfaces
->	8. local constances, variables using declared types, or interfaces
-> 	9. functions
-> 	10. namespaces
-> 	11. classes
+> 	2. declare
+> 	3. global constants
+> 	4. local constants
+> 	5. local variables
+> 	6. enums
+> 	7. types
+> 	8. interfaces
+>	  9. local constances, variables using declared types, or interfaces
+> 	10. functions
+> 	11. namespaces
+> 	12. classes
 > * interfaces
 > 	1. variables
 > 	2. methods
