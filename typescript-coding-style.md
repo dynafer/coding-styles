@@ -194,7 +194,7 @@
 > 	4. methods
 > 
 > ### 11. Use __*for const ... of ...*__ if index isn't required
-> * Allow only __*reduce*__ built-in methods
+> * Allow only __*reduce*__ and __*reduce*__ built-in methods
 > ```Typescript
 > const someArray: string[] = [..., ..., ...];
 > const someObject: object = { ... };
@@ -205,6 +205,10 @@
 > 
 > const addedString: string = someArray.reduce((prev, current, index, array) => {
 > 	return `${prev}[${current}]`;
+> });
+> 
+> const filteredString: string[] = someArray.reduce((item, index) => {
+>   return someArray.indexOf(item) === index;
 > });
 > 
 > for (const [key, value] of Object.entries(someObject)) {
