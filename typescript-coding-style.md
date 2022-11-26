@@ -26,6 +26,7 @@
 > * enums
 > * interfaces
 > * namespaces
+> * All the key names inside of interfaces (except boolean, boolean must be start 'b')
 > 
 > ```Typescript
 > export const SomeVariable: string = 'Some Strings...';
