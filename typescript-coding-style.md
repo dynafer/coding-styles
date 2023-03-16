@@ -194,29 +194,30 @@
 > 	3. private variables
 > 	4. methods
 > 
-> ### 11. Use __*for const ... of ...*__ if index isn't required
-> * Allow only __*reduce*__ and __*reduce*__ built-in methods
+> ### 11. Use __*for native.*__
+> * Allow only __*reduce*__ and __*forEach*__ built-in methods
 > ```Typescript
 > const someArray: string[] = [..., ..., ...];
 > const someObject: object = { ... };
 > 
-> for (const item of someArray) {
+> for (let index = 0, length = someArray.length; index < length; ++index) {
 > 	...
 > }
 > 
-> const addedString: string = someArray.reduce((prev, current, index, array) => {
-> 	return `${prev}[${current}]`;
+> const addedString: string = someArray.forEach((currentValue, index, arr) => {
+> 	...
 > });
 > 
 > const filteredString: string[] = someArray.reduce((item, index) => {
 >   return someArray.indexOf(item) === index;
 > });
 > 
-> for (const [key, value] of Object.entries(someObject)) {
+> const entries = Object.entries(someObject);
+> for (let index = 0, length = entries.length; index < length; ++index) {
 > 	...
 > }
 > 
-> for (let index = 0; index < someArray.length; ++ index) {
+> for (let index = 0; index < someArray.length; ++index) {
 > 	if (index === 1) break;
 > 	...
 > }
